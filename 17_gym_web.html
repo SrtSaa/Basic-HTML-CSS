@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym-Nation</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background: url("https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png") no-repeat center center/cover;
+            /* background-size: 1600px;      */
+        }
+        
+        .navbar{
+            /* border: 5px solid red; */
+            overflow: auto;
+            margin: 20px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 35%;
+        }
+
+        .navbar ul{
+            padding: 0px 0px;
+        }
+
+        .navbar li{
+            display: inline-block;
+            list-style: none;
+            /* border: 2px solid yellow; */
+            margin: 0px 10px;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: aquamarine;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+        .navbar a:hover, .button a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        .navbar a:active, .button a:active{
+            color: pink;
+            text-decoration: underline;
+        }
+
+        .navbar .active{
+            text-decoration: underline;
+            color: rgba(4, 255, 171, 0.638);
+        }
+        
+        .icon{
+            /* border: 5px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            overflow: visible;
+        }
+
+        .icon p{
+            display: inline;
+        }
+
+        .icon span{
+            font-weight: bold;
+            font-size: 50px;
+            /* color: bisque; */
+        }
+        
+        #bg1{
+            padding: 0px;
+            margin: 0px;
+            color: yellow;
+        }
+        
+        #bg2{
+            padding: 0px;
+            margin: 0px;
+            color:bisque;
+        }
+
+        .button{
+            position: absolute;
+            right: 35px;
+            top: 40px;
+            display: inline-block;
+            width: 16%;
+            /* border: 2px solid white; */
+        }
+
+        #btn{
+            margin: 0px 9px;
+            background-color: darkgreen;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+        
+        .button a{
+            text-decoration: none;
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        
+        .box2{
+            background-color: #0b2d59;
+            border: 3px solid rgb(255, 0, 0);
+            align-content: center;
+            margin: 150px auto;
+            width: 30%;
+            padding-bottom: 15px;
+            border-top-left-radius: 50px ;
+            border-bottom-right-radius: 50px ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        input{
+            display: block;
+            text-align: center;
+            margin: 7px auto;
+            width: 66%;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 20 px;
+        }
+
+        h1{
+            text-align: center;
+            color: yellow;
+        }
+
+        #smt{
+            display: block;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            padding: 3px 10px;
+            width: 30%;
+            margin: 20px auto;
+            background-color: darkgreen;
+            font-size: 25px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #smt:hover{
+            color: lightblue;
+            text-decoration: underline;
+        }
+
+        #smt:active{
+            background-color: lightgreen;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>   
+        <div class="icon">
+            <center><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/gym-1640581-1390780.png" alt="" height="100"></center> 
+            <div>
+                <span id="bg1">Gym-</span><span id="bg2">Nation</span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div> 
+
+        <div class="button">
+            <button id="btn"><a href="#">call us</a></button>
+            <button id="btn"><a href="#">mail us</a></button>
+        </div>
+    </header>
+
+    <div class="box2">
+        <h1>Welcome to Gym-Nation</h1>
+        <input type="text" name="Name" placeholder="Enter Your Name">
+        <input type="number" name="Age" placeholder="Enter Your Age">
+        <input type="text" name="Genger" placeholder="Enter Your Gender">
+        <input type="number" name="Phone_no" placeholder="Enter Your Phone_no">
+        <input type="email" name="Email" placeholder="Enter Your Email">
+        <buttton id="smt">Submit</buttton>
+    </div>
+
+
+        
+        
+</body>
+</html>

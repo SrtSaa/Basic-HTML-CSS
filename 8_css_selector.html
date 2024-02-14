@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+
+    <style>
+        /* elemental selector */
+        p {
+            color:  red;
+        }
+        span {
+            border: 2px solid red;
+        }
+
+        /* id selector */
+        #idSelector {
+            color: blue;
+        }
+
+        /* class selector */
+        .classSelector {
+            color: green;
+            background-color: bisque;
+        }
+
+        /* group selector */
+        footer, span {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>This is a paragraph.</p>
+    </div>
+    <div>
+        <p>This is another paragraph.</p>
+        <p id="idSelector">This is new paragraph, here idSelector is used.</p>
+        <p class="classSelector">Here class selector is used.</p>
+        <p id="idSelector" class="classSelector">Here both id and class selector are used.</p>
+    </div>
+
+    <span>This is a span</span>
+
+    <footer>This is a footer</footer>
+
+</body>
+</html>

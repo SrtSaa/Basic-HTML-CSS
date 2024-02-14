@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+
+    <script>
+        // normal function
+        // function greet(){
+        //     console.log("Hello...");
+        // }
+
+        // arrow function
+        let greet = ()=> {
+            console.log("Hello...");
+        };
+
+        // let greet = ()=> console.log("Hello...");
+
+        greet();    
+
+        // let sum = (a, b) => {
+        //     return a+b;
+        // };
+        let sum = (a, b) => a+b;    // for two or more or no parameter we have to use paranthesis
+        let half = a => a/2;        // for single parameter no parathesis is required
+        
+        console.log(sum(4,64));
+        console.log(half(5));
+
+        let obj={
+            greeting: "Good morning ",
+            names: ["Srt", "Joy", "Raj"],
+            speak(){
+                this.names.forEach((studnet)=>{
+                    console.log(this.greeting+studnet);
+                });
+            }
+        }
+
+        obj.speak();
+    </script>
+   
+</body>
+</html>

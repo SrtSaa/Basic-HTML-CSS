@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child pseudo selector</title>
+    <style>
+        div{
+            display: block;
+            width: 33%;
+            margin: auto;
+        }
+        input{
+            margin: 5px 0px;
+        }
+
+        input[type='text']{
+            border: 2px solid green;
+            height: 30px;
+            text-align: center;
+        }
+
+        input[type='email']{
+            text-align: end;
+        }
+
+        a[target='_blank']{
+            font-size: 30px;
+            color: green;
+        }
+        a[target='_self']{
+            font-size: 20px;
+            color: blue;
+        }
+
+        /* li:nth-child(5){
+            color: red;
+        } */
+
+        /* n starts with 0 */
+        /* li:nth-child(3n+1){
+            color: blue;
+        } */
+
+        li:nth-child(odd){
+            color: magenta;
+            font-weight: bold;
+        }
+
+        li:nth-child(even){
+            color: rgb(33, 167, 0);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+        </form>
+        <br>
+        <br>
+        <a href="http://google.com" target="_blank">GO to google</a><br>
+        <a href="http://facebook.com" target="_self">GO to facebook</a>
+        <br><br><br>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+            <li>item8</li>
+            <li>item9</li>
+            <li>item10</li>
+        </ul>
+    </div>
+</body>
+</html>

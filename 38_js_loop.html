@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop in js</title>
+</head>
+<body>
+    <div><h1>this is a page</h1></div>
+
+    <script>
+        console.log("For loop:");
+        for(let i=0; i<3; i++)
+            console.log(i);
+        
+        let list = ["itm1","itm2","itm3","itm4","itm5"];
+        for(let i=0; i<list.length; i++)
+            console.log(list[i]);
+
+
+        console.log("For each loop:");
+        list.forEach(
+            function f(element){
+                console.log(element);
+            }
+        )
+        list.forEach(element => {
+            console.log(element);
+        });
+
+
+        console.log("For of loop:");
+        for(element of list)
+            console.log(element);
+
+        // for in loop is used to iterate over any object
+        let detail = {
+            name: "Srt",
+            salary: 4,
+            occupation: "none"
+        };
+
+        console.log("For in loop:");
+        for(key in detail)
+            console.log(`${key} is ${detail[key]}`);    // must have to use backtick
+    </script>
+</body>
+</html>

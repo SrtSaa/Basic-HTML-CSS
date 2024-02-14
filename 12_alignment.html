@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .mainClass {
+            border: 5px solid green;
+            padding: 10px 12px;
+            margin: 15px auto;
+            width: 500px;
+            background-color: cyan;
+        }
+
+        .subClass {
+            border: 3px solid red;
+            padding: 0px 10px;
+            margin: 7px;
+            background-color: bisque;
+        }
+
+        #id1 {
+            float: left;
+            width: 48%;
+        }
+
+        #id2 {
+            float: right;
+            width: 43%;
+        }
+
+        #id3 {
+            clear: left;
+            width: 100%;
+        }
+
+        #id4 {
+            clear: both;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="mainClass">
+        <div id="id1" class="subClass">
+            <h3>Part 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, qui praesentium a repellat accusamus ad temporibus assumenda saepe magni, sint dolores sunt omnis, cupiditate ducimus nihil doloribus? Recusandae, obcaecati nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat dicta pariatur, illo molestiae nulla commodi dolores magnam similique debitis.</p>
+        </div>
+        <div id="id2" class="subClass">
+            <h3>Part 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, qui praesentium a repellat accusamus ad temporibus assumenda saepe magni, sint dolores sunt omnis, cupiditate ducimus nihil doloribus? Recusandae, obcaecati nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat dicta pariatur, illo molestiae nulla commodi dolores magnam similique debitis.</p>
+        </div>
+        <div id="id3" class="subClass">
+            <h3>Part 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, qui praesentium a repellat accusamus ad temporibus assumenda saepe magni, sint dolores sunt omnis, cupiditate ducimus nihil doloribus? Recusandae, obcaecati nemo.</p>
+        </div>
+    </div>
+    <div class="mainClass">
+        <div id="id1" class="subClass">
+            <h3>Part 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, qui praesentium a repellat accusamus ad temporibus assumenda saepe magni, sint dolores sunt omnis, cupiditate ducimus nihil doloribus? Recusandae, obcaecati nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat dicta pariatur, illo molestiae nulla commodi dolores magnam similique debitis.</p>
+        </div>
+        <div id="id2" class="subClass">
+            <h3>Part 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, qui praesentium a repellat accusamus ad temporibus assumenda saepe magni, sint dolores sunt omnis, cupiditate ducimus nihil doloribus? Recusandae, obcaecati nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat dicta pariatur, illo molestiae nulla commodi dolores magnam similique debitis.</p>
+        </div>
+        <div id="id4" class="subClass">
+            <h3>Part 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, qui praesentium a repellat accusamus ad temporibus assumenda saepe magni, sint dolores sunt omnis, cupiditate ducimus nihil doloribus? Recusandae, obcaecati nemo.</p>
+        </div>
+    </div>
+</body>
+</html>

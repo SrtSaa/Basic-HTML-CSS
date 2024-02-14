@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and object in JS</title>
+</head>
+<body>
+    <h1>Array and object in JS</h1>
+    <script>
+        let arr = [34, 12, "Hello", undefined];
+        console.log(arr);
+        console.log(arr[2]);
+        arr.push(35);
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+        console.log(arr.sort());
+        console.log(arr.length);
+        
+        let arr2 = new Array(45, 23, 62, [822, 3], "hi", undefined);
+        console.log(arr2);
+        console.log(arr2.sort());
+
+        // this line will create an array of size 10
+        let arr3 = new Array(10);
+        console.log(arr3);
+
+
+        // object
+        let student = {
+            name: "Joy",
+            age: 24,
+            subject: ["C","java"],
+            "College ID": 27
+        }
+        console.log(student);
+        console.log(student.name);
+        console.log(student['name']);
+        // console.log(student.College ID);     // error
+        console.log(student['College ID']);
+        
+    </script>
+</body>
+</html>

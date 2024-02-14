@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid autofit and minmax</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+        .item{
+            background-color: bisque;
+            border: 2px solid black;
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sequi aliquam ducimus fuga nulla iste distinctio nobis quo vel! Totam id aut, minus vel odit tenetur aliquam nulla accusamus velit.</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae eligendi obcaecati blanditiis, repudiandae sunt labore!</div>
+        <div id="footer" class="item">This is a footer</div>
+    </div>
+</body>
+</html>

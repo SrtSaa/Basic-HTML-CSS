@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css border and background</title>
+
+    <style>
+        #first {
+            background-color: red;
+            height: 50px;
+            width: 250px;
+            border: 5px solid blue;
+            /* border-width: 5px;
+            border-style: solid;
+            border-color: blue; */
+            border-radius: 15px;    /* this is used to round the corner of the border */
+        }
+
+        #second {
+            background-color: bisque;
+            height: 50px;
+            width: 250px;
+            
+            border-top: 5px solid red;
+            border-right: 5px solid blue;
+            border-bottom: 5px solid green;
+            border-left: 5px solid purple;
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 40px;
+        }
+
+        #third {
+            height: 250px;
+            width: 250px;
+            
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg");
+            border: 5px solid blue;
+            
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x;    repeat only on x axis */
+            /* background-repeat: repeat-y;    repeat only on x axis */
+            
+            /* background-position: top center; */
+            /* background-position: top left; */
+            /* background-position: bottom right; */
+            /* background-position: 150px center; */
+            /* background-position: 150px 200px; */
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="first">This is first paragraph.</p>
+    <p id="second">This is second paragraph.</p>
+    <p id="third">This is third paragraph.</p>
+
+</body>
+</html>

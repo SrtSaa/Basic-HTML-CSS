@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_beg</title>
+    <style>
+        p{
+            color: burlywood;
+            background-color: brown ;
+        }
+        </style>
+    <link rel="stylesheet" href="7a_style.css">
+
+    <!-- 
+    in case of using internal and external css, which is included last gets
+    the priority. Here external css is included at the last so it gets the priority.
+    
+    But if we want a particular css gets the priority, we've to write
+    '!important' inside the code.
+    -->
+
+</head>
+<body>
+    <p style="color: red; background-color: yellow;">here inline css is used</p>
+    <p>here internal or external css is used</p>
+</body>
+</html>

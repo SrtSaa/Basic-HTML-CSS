@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h3>Fill the form</h3>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+            <label for="age">Age: </label>
+            <input type="number" name="age" min="0" max="150" id="age" placeholder="Enter your age">
+        </div>
+        <br>
+        <div>
+            <label for="dob">DoB: </label>
+            <input type="date" name="date" id="dob">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone: </label>
+            <input type="number" name="phone" min="1000000000" id="phone" placeholder="Enter your phone no">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <br>
+        <div>
+            Email:
+            <label for="M"><input type="radio" name="gen" id="M">Male</label>
+            <label for="F"><input type="radio" name="gen" id="F">Female</label>
+            <label for="Other"><input type="radio" name="gen" id="Other">Other</label>
+        </div>
+        <br>
+        <div>
+            <label for="elegible">Eligible? </label>
+            <input type="checkbox" name="check" id="elegible">
+            <!-- <input type="checkbox" name="check" checked id="elegible"> -->
+            <!-- checked is used attribute so the checkbox is checked by default -->
+        </div>
+        <br>
+        <div>
+            <label for="des">Describe yourself: </label>
+            <br><textarea name="des" cols="50" rows="7" id="des" placeholder="Your Description"></textarea> 
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset form">
+        </div>
+
+    </form>
+</body>
+</html>

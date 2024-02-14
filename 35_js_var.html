@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var in js</title>
+    <script>
+        var a = 78;
+        var b = "srt";
+        console.log(b+" saa");
+        var len = b.length;
+        console.log(`length of b is ${len}`) 
+        var c = new String("This is a string");
+        console.log(c)
+
+        // first occurance of a substring
+        a = c.indexOf('is');
+        console.log(a);
+
+        // last occurance of a substring
+        a = c.lastIndexOf('is');
+        console.log(a);
+
+        // char at particular index position
+        a = c.charAt(3);
+        console.log(a);
+
+        // substring of a string
+        a = c.slice(3,11);       // it can take negative value
+        console.log(a);
+
+        a = c.substring(3,11);   // it cannot take negative value
+        console.log(a);
+
+        a = c.substr(3,11);
+        console.log(a);
+
+
+        // replace a string
+        a = c.replace('string','replaced string');
+        console.log(a);
+
+        // lowercase and uppercase
+        a = c.toLowerCase();
+        console.log(a);
+        a = c.toUpperCase();
+        console.log(a);
+
+        // concatenation
+        a = c.concat(' (new)');
+        console.log(a);
+
+        // remove whitespace
+        a = "     string with whitespace     ";
+        console.log(a);
+        console.log(a.trim());
+
+        
+        // in javascript two variables can be declared as same name using var
+        // it can create a problem, to avoid this we'll use let
+
+        let x ="u";
+        const m = "It is constant, it cannot be changed"
+
+
+    </script>
+</head>
+<body>
+    <h1>Datatypes in JavaScript</h1>
+</body>
+</html>

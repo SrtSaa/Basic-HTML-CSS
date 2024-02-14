@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+
+    <style>
+        body{
+            color: black;
+        }
+        
+        header::before{
+            content: "";
+            background: url("https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: .7;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+        }
+        
+        .navbar li{
+            list-style: none;
+            padding: 35px 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        section{
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        h1{
+            font-size: 35px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contact us</li>
+                <li class="item">Help</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ad culpa inventore qui repudiandae odit vitae pariatur! Et id nesciunt nulla ea ullam sequi unde molestiae distinctio quis doloribus laboriosam facilis perferendis officia cupiditate sunt ab labore eligendi, dolor debitis aliquid facere mollitia dolorum nostrum modi? Unde eum magnam possimus atque placeat id ab minima. Repellendus, nesciunt nemo? Sint, possimus!</p>
+    </section>
+</body>
+</html>

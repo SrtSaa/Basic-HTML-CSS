@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .box {
+            border: 3px solid red;
+            background-color: bisque;
+            text-align: justify;
+            padding: 5px 15px;
+            margin: 20px auto;
+            width: 500px;
+        }
+
+        .btn {
+            color: rgb(241, 72, 103);
+            padding: 3px;
+            border-color: green;
+            font-weight: bold;
+        }
+
+        #bgcolor{
+            background-color: rgb(248, 248, 114);
+        }
+
+        /* after clicking the button */
+        a:visited{
+            color: blue;
+        }
+
+        /* at time of clicking the button */
+        a:active{
+            color: green;
+        }
+        
+        /* when cursor is above it */
+        a:hover{
+            color: red;
+            background-color: yellow;
+            border-color: yellow;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quos molestiae quibusdam facere a ducimus, consectetur atque ipsa voluptates fugiat, officia ut optio nobis maiores. Veritatis amet necessitatibus, tenetur voluptate eaque id quos ullam iusto, in similique illum tempore nulla eligendi eius non dignissimos ipsa odio ducimus. Officia, quibusdam aspernatur!
+        </p>
+        <p>
+            <a href="https://www.lipsum.com/feed/html" class="btn" target="_blank">Read more</a>
+        </p>
+        <br><br><br>
+        <div><button id="bgcolor" class="btn"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">Contact us</a></button></div>
+    </div>
+    
+</body>
+</html>
